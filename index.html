@@ -70,12 +70,65 @@
   </main>
     <h3><strong>Summary</strong></h3>
     <footer>
-      <p>Our team logo</p>
-      <img src="assets/team19logo.png" width="250" height="250">
-    <p>Be communative <br>
+      
+      <img src="insert img path" width="250" height="250">
+      <details> 
+        <summary><b>Rules</b></summary>
+      <p>Be communative <br>
       Be attentive during meetings<br>
       Try to manage time as best as possible<br>
       Be honest
       </p>
+
+      </details>
+
     </footer>
+  
+  
+<hr>
+  
+  <section>
+  <h3>
+    <b>Form</b>
+    </h3>
+    
+    <form action="action_page.php">
+      <fieldset>
+        <label for="name">Name:</label>
+       <input type="text" id="name" name="name"><br>
+        <textarea id="big" name="big" rows="10" cols="50">This is a pretty big textarea.</textarea><br>
+      </fieldset>
+      <input type="submit">
+    </form>
+    
+    <form action="/action_page.php" method="get">
+      <label for="fruit">Choose your favorite fruit.</label>
+      <input list="fruits" name="fruit" id="fruit">
+      <datalist id="fruits">
+       <option value="banana">
+       <option value="apple">
+       <option value="pear">
+       <option value="peach">                                                                                                      
+       </datalist>
+      <input type="submit">
+    </form>
+    
+       <form action="/action_page.php" method="get">
+      <label for="fruit">Choose your favorite fruit.</label>
+      <select name="fruit" id="fruit">
+        <option value="banana">banana</option>
+        <option value="apple">apple</option>
+        <option value="pear">pear</option>
+        <option value="peach">peach</option>                                                                                 
+          </select>
+      <input type="submit">
+    </form>
+    
+   <button type="button" onclick="alert('i got clicked :/')">
+  	Don't click...
+    </button>
+    
+  </section>
+  
   </body>
+</html>
