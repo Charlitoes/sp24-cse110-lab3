@@ -1,1 +1,91 @@
+:root{
+  --purple: #581790;
+}
 
+
+header {
+  /*includes 4 absolute units which are the 50px, 50%, 60%, 1
+  
+  	also changes the color of the header text so its more visable for the reader
+  
+  	margin longhand usage
+  */
+  margin-top: 50px;
+  margin-bottom: 50px;
+ 
+  color: red;
+  color: hsl(1, 50%, 60%);
+  
+  text-align: center;
+  
+  
+ 
+}
+
+body{
+  /*Changes the color from black to purple for all the content in the body
+  
+  	Also has a fallback variable just incase if the variable doesn't work
+  
+  	Includes an absolute unit #581790
+  */
+  
+  color: var(--purple, #581790);
+}
+
+section1{
+  color: rgb(100,0,0);
+}
+
+section2{
+  color: color-mix(in lch, blue, red);
+}
+      
+
+form{
+  /* added background color to the form box*/
+  background-color: yellow;
+  
+}
+
+p{
+  /* padding longhand usage*/
+  border: 2px solid blue;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  
+  color: black;
+  text-decoration: underline dotted blue;
+  text-align: center;
+}
+
+ol{
+  /* padding shorthand usage*/
+  padding: 10px 0px 10px 50px;
+}
+
+/* these are relative units */
+.container {
+  width: 300px;
+  border: 2px solid black;
+  padding: 20px;
+}
+
+.card {
+  width: 60%;
+  border-width: 3px;
+  border-style: solid;
+  border-color: green;
+  padding: 10px;
+}
+
+
+/* this is an absolute unit */
+.cut{
+  /*margin short hand usage*/
+  margin: 10px;
+  border: 2px solid blue;
+  width: 600px
+}
