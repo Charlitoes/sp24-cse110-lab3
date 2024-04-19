@@ -31,10 +31,12 @@ body{
   */
   
   color: var(--purple, #581790);
+  
 }
 
 section1{
   color: rgb(100,0,0);
+
 }
 
 section2{
@@ -44,6 +46,7 @@ section2{
 
 form{
   /* added background color to the form box*/
+  position: static;
   background-color: yellow;
   
 }
@@ -64,6 +67,19 @@ p{
 ol{
   /* padding shorthand usage*/
   padding: 10px 0px 10px 50px;
+  display: inline-block;
+}
+
+button:hover{
+  color: blue;
+}
+
+input:hover{
+  color: red;
+}
+
+input:active{
+  box-shadow: 2px 2px #15B3E8;
 }
 
 /* these are relative units */
@@ -79,6 +95,9 @@ ol{
   border-style: solid;
   border-color: green;
   padding: 10px;
+  display: inline-block;
+  position: relative;
+  top: 10px; left: 40px; 
 }
 
 
@@ -87,5 +106,7 @@ ol{
   /*margin short hand usage*/
   margin: 10px;
   border: 2px solid blue;
-  width: 600px
+  min-width: 10px
+  max-width: 600px
+
 }
