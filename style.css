@@ -69,7 +69,7 @@ section:has(p){
 
 
 section2{
-  color: color-mix(rgb, blue, red);
+  color: color-mix(from srgb, blue, red);
 }
       
 #agen-1, #agen-2, #agen-3, #agen-4{
