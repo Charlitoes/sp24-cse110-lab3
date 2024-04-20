@@ -69,7 +69,7 @@ section:has(p){
 
 
 section2{
-  color: color-mix(in lch, blue, red);
+  color: color-mix(blue, red);
 }
       
 #agen-1, #agen-2, #agen-3, #agen-4{
@@ -144,10 +144,8 @@ input:active{
   display: flex;
   margin: 10px;
   border: 2px solid blue;
-  min-width: 10px
-  max-width: 600px
-  
-
+  min-width: 10px;
+  max-width: 600px;
 }
 
 .grid{
