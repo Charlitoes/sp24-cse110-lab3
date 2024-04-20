@@ -2,6 +2,22 @@
   --purple: #581790;
 }
 
+* {
+  font-family: "myFont", "Bitstream Vera Serif", serif;
+}
+
+/* if the webpage is too small the background will be pink indicating that the webpage is too small for the screen */
+
+body{
+  background-color: pink;
+}
+
+@media screen and (min-width: 480px){
+  body{
+    background-color: white;
+  }
+}
+
 
 header {
   /*includes 4 absolute units which are the 50px, 50%, 60%, 1
@@ -22,6 +38,10 @@ header {
  
 }
 
+:is(h1, h2, h3):has(+ :is(h2, h3, h4)){
+  text-decoration: underline;
+}
+
 body{
   /*Changes the color from black to purple for all the content in the body
   
@@ -39,16 +59,32 @@ section1{
 
 }
 
+li[target]{
+  background-color: yellow; 
+}
+
+section:has(p){
+  text-align: center;
+}
+
+
 section2{
   color: color-mix(in lch, blue, red);
 }
       
+#agen-1, #agen-2, #agen-3, #agen-4{
 
+  color: white;
+}
 form{
   /* added background color to the form box*/
   position: static;
   background-color: yellow;
   
+}
+
+*.list{
+  background: black;
 }
 
 p{
@@ -84,6 +120,7 @@ input:active{
 
 /* these are relative units */
 .container {
+  display: grid;
   width: 300px;
   border: 2px solid black;
   padding: 20px;
@@ -104,9 +141,65 @@ input:active{
 /* this is an absolute unit */
 .cut{
   /*margin short hand usage*/
+  display: flex;
   margin: 10px;
   border: 2px solid blue;
   min-width: 10px
   max-width: 600px
+  
 
+}
+
+.grid{
+  border-style: solid;
+  border-color: black;
+  
+  background-color: #2196F3;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 80px auto 80px; 
+  
+  justify-content: space-evenly;
+  
+  column-gap: 10px;
+  row-gap: 15px;
+  
+  padding: 10px;
+  
+}
+
+.item-item{
+  background-color: rgba(255, 255, 255, 0.8);
+  
+  border: 1px solid;
+  
+  padding: 10px;
+  
+  font-size: 50px;
+  text-align: center;
+  
+}
+
+
+
+.flex-container{
+  display: flex;
+  
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  background-color: #2196F3;
+  padding: 10px;
+  
+  border: 3px solid black;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  border: 2px solid;
+  line-height: 100px;
+  align-self: auto;
+   
 }
